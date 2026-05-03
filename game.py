@@ -49,7 +49,7 @@ def game():
 
 
             if next_action == 'take':
-                for i in rooms[room][:]:  
+                for i in rooms[room].copy():  
                     if i == 'Key':
                         points += 10
                     if i == 'Map':
